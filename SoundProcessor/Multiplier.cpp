@@ -46,8 +46,8 @@ Sample Multiplier::handle(std::vector<Sample> samples) {
 
 std::string Multiplier::help() {
 	return std::string("Multiplying the interval by a constant(mult). "
-					   "Three parameters: multiplier, start and isEnd of the time interval (in seconds). "
-					   "The start and isEnd are 0 by default. "
-					   "If the end of the interval is the isEnd of the file, then the corresponding parameter should be 0. "
+					   "Three parameters: multiplier, start and end of the time interval (in seconds). "
+					   "The start and end are 0 by default. "
+					   "If the end of the interval is the end of the file, then the corresponding parameter should be 0. "
 					   "In the output stream in this time interval - the multiplied interval with a cutoff, the rest - as in the input stream.");
 }

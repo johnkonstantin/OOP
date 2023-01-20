@@ -1,0 +1,2 @@
+gameoflife --input=filename [--output=filename --iterations=num]
+When the program is running, press any key to open the command input mode.

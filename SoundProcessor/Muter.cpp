@@ -23,6 +23,6 @@ Muter::Muter(float begin, float end) {
 }
 
 std::string Muter::help() {
-	return std::string("Mute the interval(mute). Two parameters: the beginning and the isEnd of the time interval (in seconds). "
+	return std::string("Mute the interval(mute). Two parameters: the beginning and the end of the time interval (in seconds). "
 					   "There is silence in the output stream in this time interval, the rest is like in the input stream.");
 }
