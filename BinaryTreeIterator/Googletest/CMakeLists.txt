@@ -1,6 +1,6 @@
 project(Google_tests)
 
-add_subdirectory(lib)
+add_subdirectory(googletest)
 include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
 
 cmake_path(GET CMAKE_CURRENT_SOURCE_DIR PARENT_PATH TEST_DIR)
