@@ -1,0 +1,3 @@
+[submodule "BinaryTreeIterator/Googletest/googletest"]
+	path = BinaryTreeIterator/Googletest/googletest
+	url = https://github.com/google/googletest.git
