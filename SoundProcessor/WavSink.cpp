@@ -34,7 +34,8 @@ WavSink::WavSink(const std::string &path, Size bufferSize) {
 WavSink::~WavSink() {
 	flush();
 	_fout->seekp(0, std::ios_base::beg);
-	_header.subchunk2Size = _numWroteSamples;
+	_header.subchunk2Size = _numWroteSamples * 2;
+	_header.chunkSize = _header.subchunk2Size + sizeof(_header);
 	_fout->write((char*)&_header, sizeof(_header));
 	_fout->close();
 	delete _fout;
